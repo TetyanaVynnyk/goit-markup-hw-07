@@ -23,12 +23,13 @@
         #FFFFFF;
 }
 
-.adress {
+.address {
     display: flex;
     flex-direction: column;
+    font-style: normal;
 }
 
-.adress__link {
+.address__link {
     margin-bottom: 9px;
     @include font(400, 14px, 1.71);
     letter-spacing: 0.03em;
