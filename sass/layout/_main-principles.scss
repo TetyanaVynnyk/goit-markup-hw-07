@@ -1,4 +1,4 @@
-.principles-list-icon {
+.principles-list__icon {
     @extend %align;
     width: 270px;
     height: 120px;
@@ -16,7 +16,7 @@
     gap: 30px;
 }
 
-.principles-list-item {
+.principles-list__item {
     width: 270px;
 }
 

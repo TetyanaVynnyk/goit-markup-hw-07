@@ -22,11 +22,11 @@
     margin-right: 93px;
 }
 
-.first-logo-word {
+.logo-link__first-logo-word {
     color: #2196F3;
 }
 
-.second-logo-word {
+.logo-link__second-logo-word {
     color: #000000;
 }
 
@@ -34,11 +34,11 @@
     display: flex;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
     @include font(500, 14px, 1.14);
     letter-spacing: 0.02em;
     color: inherit;
@@ -76,14 +76,14 @@
     display: flex;
 }
 
-.contact-list-item {
+.contact-list__item {
     display: inline-block;
     margin-left: 30px;
     text-align: center;
     color: #757575;
 }
 
-.contact-icon {
+.contact-list__icon {
     margin-right: 10px;
     fill: currentColor;
     vertical-align: text-top;

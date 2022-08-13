@@ -3,12 +3,12 @@
     gap: 30px;
 }
 
-.services-list-item {
+.services-list__item {
     position: relative;
     flex-basis: calc((100% - 60px)/3);
 }
 
-.services-item-text {
+.services-list__item-text {
     position: absolute;
     width: 100%;
     right: 0;

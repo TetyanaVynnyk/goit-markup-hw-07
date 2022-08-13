@@ -5,7 +5,7 @@
     padding-right: 15px;
 }
 
-.partner-item {
+.partner-list__item {
     width: 170px;
     height: 92px;
 
@@ -14,7 +14,7 @@
     }
 }
 
-.partner-item-link {
+.partner-list__item-link {
     @extend %align;
     width: inherit;
     height: inherit;
@@ -32,13 +32,13 @@
     }
 }
 
-.partner-item-icon {
+.partner-list__item-icon {
     fill: #AFB1B8;
 
     transition: fill var(--transition-dur-and-fun);
 
-    .partner-item-link:hover &,
-    .partner-item-link:focus & {
+    .partner-list__item-link:hover &,
+    .partner-list__item-link:focus & {
     fill: var(--accent-color);
 }
 }

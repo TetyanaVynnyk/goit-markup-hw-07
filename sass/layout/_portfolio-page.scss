@@ -4,11 +4,11 @@
     justify-content: center;
 }
 
-.portfolio-btn:not(:last-child) {
+.portfolio-menu__btn-wrapper:not(:last-child) {
     margin-right: 8px;
 }
 
-.portfolio-menu-btn {
+.portfolio-menu__btn {
     min-width: 73px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -37,7 +37,7 @@
     flex-wrap: wrap;
 }
 
-.portfolio {
+.portfolio__item {
     transition: box-shadow var(--transition-dur-and-fun);
 
     &:hover {
@@ -45,12 +45,12 @@
     }
 }
 
-.portfolio-overlay {
+.portfolio-item__overlay {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-overlay-text {
+.portfolio-item__overlay-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,14 +69,14 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);
-}
 
-.portfolio-item-link:hover .portfolio-overlay-text,
-.portfolio-item-link:focus .portfolio-overlay-text {
+    .portfolio-item__link:hover &,
+    .portfolio-item__link:focus & {
     transform: translate(0, 0);
+    }
 }
 
-.portfolio-list-item {
+.portfolio-list__item {
     flex-basis: calc((100% - 60px) / 3);
 
     &:not(:nth-child(3n)) {
@@ -88,7 +88,7 @@
     }
 }
 
-.portfolio-description {
+.portfolio__description {
     border: 1px solid #EEEEEE;
     padding-top: 20px;
     padding-right: 24px;
@@ -96,14 +96,14 @@
     padding-left: 24px;
 }
 
-.portfolio-item-title {
+.portfolio-item__title {
     margin-bottom: 4px;
     @include font(700, 18px, 2);
     letter-spacing: 0.06em;
     color: #212121;
 }
 
-.portfolio-item-text {
+.portfolio-item__text {
     @include font(400, 16px, 1.88);
     letter-spacing: 0.03em;
     color: var(--block-text-color);
