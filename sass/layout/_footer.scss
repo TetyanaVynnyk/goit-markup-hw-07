@@ -26,11 +26,11 @@
 .address {
     display: flex;
     flex-direction: column;
-    font-style: normal;
 }
 
 .address__link {
     margin-bottom: 9px;
+    font-style: normal;
     @include font(400, 14px, 1.71);
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -49,6 +49,7 @@
 
 .e-mail_footer,
 .phone-number_footer {
+    font-style: normal;
     @include font(400, 14px, 1.71);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
