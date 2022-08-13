@@ -14,9 +14,7 @@
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+    @include font(500, 16px, 1.62);
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
@@ -65,9 +63,7 @@
     padding-right: 24px;
     padding-bottom: 63px;
     padding-left: 24px;
-    font-style: regular;
-    font-size: 18px;
-    line-height: 1.55;
+    @include font(400, 18px, 1.55);
     align-self: left;
     vertical-align: top;
     letter-spacing: 0.03em;
@@ -102,17 +98,13 @@
 
 .portfolio-item-title {
     margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font(700, 18px, 2);
     letter-spacing: 0.06em;
     color: #212121;
 }
 
 .portfolio-item-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(400, 16px, 1.88);
     letter-spacing: 0.03em;
     color: var(--block-text-color);
 }

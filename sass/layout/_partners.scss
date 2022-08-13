@@ -15,11 +15,9 @@
 }
 
 .partner-item-link {
-    display: flex;
+    @extend %align;
     width: inherit;
     height: inherit;
-    justify-content: center;
-    align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
     border: solid 1px #AFB1B8;

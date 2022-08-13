@@ -17,6 +17,12 @@
   overflow: hidden;
 }
 
+.footer-social-list-link, .partner-item-link, .social-list-link, .principles-list-icon, .modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3,
@@ -244,11 +250,8 @@ button {
 }
 
 .modal-form-check-desc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -455,11 +458,8 @@ button {
 }
 
 .principles-list-icon {
-  display: flex;
   width: 270px;
   height: 120px;
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -557,9 +557,6 @@ button {
 }
 
 .social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -594,11 +591,8 @@ button {
 }
 
 .partner-item-link {
-  display: flex;
   width: inherit;
   height: inherit;
-  justify-content: center;
-  align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
   border: solid 1px #AFB1B8;
@@ -649,13 +643,15 @@ button {
 
 .adress-link {
   margin-bottom: 9px;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   transition: color var(--transition-dur-and-fun);
+}
+.adress-link:hover, .adress-link:focus {
+  color: var(--accent-color);
 }
 
 .e-mail-footer {
@@ -664,7 +660,6 @@ button {
 
 .e-mail-footer,
 .phone-number-footer {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -672,12 +667,8 @@ button {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-dur-and-fun);
 }
-
-.adress-link:hover,
-.e-mail-footer:hover,
+.e-mail-footer:hover, .e-mail-footer:focus,
 .phone-number-footer:hover,
-.adress-link:focus,
-.e-mail-footer:focus,
 .phone-number-footer:focus {
   color: var(--accent-color);
 }
@@ -705,9 +696,6 @@ button {
 }
 
 .footer-social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -863,7 +851,7 @@ button {
   padding-right: 24px;
   padding-bottom: 63px;
   padding-left: 24px;
-  font-style: regular;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   align-self: left;

@@ -1,9 +1,7 @@
 .principles-list-icon {
-    display: flex;
+    @extend %align;
     width: 270px;
     height: 120px;
-    justify-content: center;
-    align-items: center;
     border-radius: 4px;
     margin-bottom: 30px;
     background-color: #F5F4FA;

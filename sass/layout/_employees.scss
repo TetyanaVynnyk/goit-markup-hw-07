@@ -26,18 +26,14 @@
 }
 
 .employee-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(500, 16px, 1.19);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
 
 .employee-working-department {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(400, 16px, 1.19);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--block-text-color);
@@ -51,9 +47,7 @@
 }
 
 .social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;

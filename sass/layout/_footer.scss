@@ -30,14 +30,16 @@
 
 .adress-link {
     margin-bottom: 9px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(400, 14px, 1.71);
     letter-spacing: 0.03em;
     color: #FFFFFF;
 
     transition: color var(--transition-dur-and-fun);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
 }
 
 .e-mail-footer {
@@ -46,23 +48,16 @@
 
 .e-mail-footer,
 .phone-number-footer {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(400, 14px, 1.71);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
     transition: color var(--transition-dur-and-fun);
-}
 
-.adress-link:hover,
-.e-mail-footer:hover,
-.phone-number-footer:hover,
-.adress-link:focus,
-.e-mail-footer:focus,
-.phone-number-footer:focus {
+    &:hover,
+    &:focus{
     color: var(--accent-color);
+    }
 }
 
 .footer-social-list-menu {
@@ -74,9 +69,7 @@
 .footer-social-list-title {
     margin-bottom: 20px;
     padding-top: 12px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14);
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
@@ -88,9 +81,7 @@
 }
 
 .footer-social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -111,9 +102,7 @@
 .footer-newsletter-form-title {
     margin-bottom: 20px;
     padding-top: 12px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14);
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
@@ -130,9 +119,7 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: #2F303A;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(400, 16px, 1.25);
     vertical-align: center;
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -140,9 +127,7 @@
     transition: border-color var(--transition-dur-and-fun);
 
     &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(400, 16px, 1.25);
     vertical-align: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -164,9 +149,7 @@
     padding-bottom: 13px;
     padding-left: 28px;
     padding-right: 13px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(700, 16px, 1.88);
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
